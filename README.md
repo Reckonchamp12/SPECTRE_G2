@@ -1,14 +1,6 @@
 # SPECTRE-G2: Gaussianized Prototype Encoder for Exact Out-of-Distribution Detection
 
-<p align="center">
-  <img src="figures/fig5_radar_dark.png" width="900" alt="SPECTRE-G2 results heatmap"/>
-  <img src="figures/fig4_wins_dark.png" width="900" alt="SPECTRE-G2 results heatmap"/>
-  <img src="figures/dataset_adult.png" width="900" alt="SPECTRE-G2 results heatmap"/>
-  <img src="figures/dataset_cifar10.png" width="900" alt="SPECTRE-G2 results heatmap"/>
-  <img src="figures/dataset_synthetic.png" width="900" alt="SPECTRE-G2 results heatmap"/>
-  <img src="figures/dataset_gridworld.png" width="900" alt="SPECTRE-G2 results heatmap"/>
-  <img src="figures/fig1_heatmap_dark.png" width="900" alt="SPECTRE-G2 results heatmap"/>
-</p>
+
 
 <p align="center">
   <a href="#installation"><img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square"/></a>
@@ -37,7 +29,15 @@ This forces $\mathbf{z}|y{=}c \sim \mathcal{N}(\boldsymbol{\mu}_c, \mathbf{I})$ 
 **Adaptive regularisation:** $\lambda = 2.0$ for tabular data ($d \leq 20$), $\lambda = 0.5$ for high-dimensional features ($d > 20$).
 
 ---
-
+<p align="center">
+  <img src="figures/fig5_radar_dark.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/fig4_wins_dark.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/dataset_adult.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/dataset_cifar10.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/dataset_synthetic.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/dataset_gridworld.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/fig1_heatmap_dark.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+</p>
 ## Results
 
 SPECTRE-G2 beats or ties the best of 12 competing baselines on **all four datasets**.
