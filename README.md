@@ -1,7 +1,13 @@
 # SPECTRE-G2: Gaussianized Prototype Encoder for Exact Out-of-Distribution Detection
 
 <p align="center">
-  <img src="figures/fig1_heatmap_light.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/fig5_radar_dark.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/fig4_wins_dark.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/dataset_adult.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/dataset_cifar10.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/dataset_synthetic.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/dataset_gridworld.png" width="900" alt="SPECTRE-G2 results heatmap"/>
+  <img src="figures/fig1_heatmap_dark.png" width="900" alt="SPECTRE-G2 results heatmap"/>
 </p>
 
 <p align="center">
@@ -241,9 +247,9 @@ If you use this code, please cite:
 ```bibtex
 @inproceedings{spectre2025,
   title     = {SPECTRE-G2: Gaussianized Prototype Encoder for Exact Out-of-Distribution Detection},
-  author    = {Anonymous},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2025}
+  author    = {Rahul D Ray},
+  booktitle = {},
+  year      = {2026}
 }
 ```
 
