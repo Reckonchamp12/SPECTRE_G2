@@ -1,0 +1,69 @@
+model:
+  latent_dim: 128
+  hidden_dim: 256
+  dropout_spectral: 0.05
+  dropout_plain: 0.10
+  n_ensemble: 5
+
+training:
+  epochs: 30
+  lr: 0.001
+  weight_decay: 0.0001
+  batch_size: 256
+  patience: 8
+  grad_clip: 1.0
+  scheduler: cosine
+
+spectre:
+  lam_gauss_tabular: 2.0      # Gaussianization strength for D ≤ 20
+  lam_gauss_highdim: 0.5      # Gaussianization strength for D > 20
+  tabular_dim_threshold: 20
+  top_k: 2
+  top_k_threshold: 0.72       # use k=1 if best signal AUROC >= threshold
+  n_pseudo_ood: 2000
+  pseudo_ood_alpha_min: 1.2
+  pseudo_ood_alpha_max: 3.0
+  pseudo_ood_noise_scale: 4.0
+  usd_n_pseudo: 4000
+  usd_epochs: 20
+  causal_max_dim: 30          # only fit causal signal if D <= this
+
+evaluation:
+  seeds: [42, 123, 777]
+  metrics: [auroc, aupr, fpr95]
+  test_size: 0.2
+  random_state: 42
+  fpr_tpr_target: 0.95
+
+data:
+  synthetic:
+    n_train: 10000
+    n_test: 2000
+    seed: 42
+  adult:
+    n_test: 2000
+    seed: 42
+  cifar10:
+    n_train: 5000
+    n_test: 1000
+    feature_dim: 512
+    seed: 42
+  gridworld:
+    n_train: 5000
+    n_test: 1000
+    grid_size: 10
+    seed: 42
+
+baselines:
+  n_ensemble: 5
+  mc_dropout_rate: 0.3
+  mc_n_samples: 30
+  evidential_lambda: 0.001
+  duq_centroid_dim: 128
+  duq_gamma: 0.999
+  duq_l: 0.1
+  conformal_alpha: 0.1
+  cqr_quantile: 0.9
+  odin_temperature: 1000.0
+  odin_epsilon: 0.002
+  usd_noise_scale: 2.0
